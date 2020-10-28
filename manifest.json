@@ -1,0 +1,13 @@
+{
+  "name": "Un YouTube Me",
+  "version": "1.0",
+  "description": "This extension will remove YouTube recomendations list",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["unTube.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "manifest_version": 2
+}
